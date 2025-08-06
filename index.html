@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Array Questions Tracker</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ffe5ec, #ffd6e0);
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #fff0f5;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #c94f7c;
+      animation: fadeIn 1s ease-in-out;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .question {
+      font-weight: bold;
+      font-size: 16px;
+      color: #444;
+      margin-bottom: 10px;
+    }
+    .pattern {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 8px;
+    }
+    .link {
+      font-size: 13px;
+      color: #007bff;
+      text-decoration: none;
+    }
+    .difficulty {
+      margin-top: 12px;
+    }
+    .difficulty-bar {
+      height: 8px;
+      background-color: #eee;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .difficulty-fill {
+      height: 100%;
+      transition: width 0.4s ease-in-out;
+    }
+    .easy { width: 33%; background-color: #7bed9f; }
+    .medium { width: 66%; background-color: #fbc531; }
+    .hard { width: 100%; background-color: #e84118; }
+    .level {
+      font-size: 12px;
+      margin-top: 4px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🚀 Array DSA Tracker</h1>
+    <p>Build consistency by mastering one pattern at a time!</p>
+  </header>
+  <div class="container">
+    <!-- Question Cards -->
+    <!-- Template: update difficulty class and VS Code link -->
+
+    <!-- Sample -->
+    <div class="card">
+      <div class="question">1. Largest Element in Array</div>
+      <div class="pattern">Simple Traversal</div>
+      <a class="link" href="#">View Code</a>
+      <div class="difficulty">
+        <div class="difficulty-bar"><div class="difficulty-fill easy"></div></div>
+        <div class="level">Easy</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="question">2. Second Largest Without Sorting</div>
+      <div class="pattern">Two-Pass / Single-Pass</div>
+      <a class="link" href="#">View Code</a>
+      <div class="difficulty">
+        <div class="difficulty-bar"><div class="difficulty-fill medium"></div></div>
+        <div class="level">Medium</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="question">3. Check if Array Sorted and Rotated</div>
+      <div class="pattern">Array Rotation</div>
+      <a class="link" href="#">View Code</a>
+      <div class="difficulty">
+        <div class="difficulty-bar"><div class="difficulty-fill medium"></div></div>
+        <div class="level">Medium</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="question">4. Remove Duplicates from Sorted Array</div>
+      <div class="pattern">Two Pointer</div>
+      <a class="link" href="#">View Code</a>
+      <div class="difficulty">
+        <div class="difficulty-bar"><div class="difficulty-fill easy"></div></div>
+        <div class="level">Easy</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="question">5. Left Rotate by One Place</div>
+      <div class="pattern">Rotation</div>
+      <a class="link" href="#">View Code</a>
+      <div class="difficulty">
+        <div class="difficulty-bar"><div class="difficulty-fill easy"></div></div>
+        <div class="level">Easy</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="question">6. Left Rotate by K Places</div>
+      <div class="pattern">Reversal Algorithm</div>
+      <a class="link" href="#">View Code</a>
+      <div class="difficulty">
+        <div class="difficulty-bar"><div class="difficulty-fill medium"></div></div>
+        <div class="level">Medium</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="question">7. Right Rotate by K Places</div>
+      <div class="pattern">Reversal Algorithm</div>
+      <a class="link" href="#">View Code</a>
+      <div class="difficulty">
+        <div class="difficulty-bar"><div class="difficulty-fill medium"></div></div>
+        <div class="level">Medium</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="question">8. Move Zeros to End</div>
+      <div class="pattern">Two Pointer</div>
+      <a class="link" href="#">View Code</a>
+      <div class="difficulty">
+        <div class="difficulty-bar"><div class="difficulty-fill easy"></div></div>
+        <div class="level">Easy</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="question">9. Linear Search</div>
+      <div class="pattern">Simple Search</div>
+      <a class="link" href="#">View Code</a>
+      <div class="difficulty">
+        <div class="difficulty-bar"><div class="difficulty-fill easy"></div></div>
+        <div class="level">Easy</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="question">10. Union of Two Sorted Arrays</div>
+      <div class="pattern">Two Pointer</div>
+      <a class="link" href="#">View Code</a>
+      <div class="difficulty">
+        <div class="difficulty-bar"><div class="difficulty-fill medium"></div></div>
+        <div class="level">Medium</div>
+      </div>
+    </div>
+
+    <!-- Continue for all 25 questions below this... -->
+
+    <div class="card"><div class="question">11. Intersection of Sorted Arrays</div><div class="pattern">Two Pointer</div><a class="link" href="#">View Code</a><div class="difficulty"><div class="difficulty-bar"><div class="difficulty-fill medium"></div></div><div class="level">Medium</div></div></div>
+
+    <div class="card"><div class="question">12. Missing Numbers in 0 to N</div><div class="pattern">Hashing</div><a class="link" href="#">View Code</a><div class="difficulty"><div class="difficulty-bar"><div class="difficulty-fill hard"></div></div><div class="level">Hard</div></div></div>
+
+    <div class="card"><div class="question">13. Maximum Consecutive Ones</div><div class="pattern">Sliding Window</div><a class="link" href="#">View Code</a><div class="difficulty"><div class="difficulty-bar"><div class="difficulty-fill easy"></div></div><div class="level">Easy</div></div></div>
+
+    <div class="card"><div class="question">14. Once and Twice Appearing Numbers</div><div class="pattern">Bit Manipulation</div><a class="link" href="#">View Code</a><div class="difficulty"><div class="difficulty-bar"><div class="difficulty-fill hard"></div></div><div class="level">Hard</div></div></div>
+
+    <div class="card"><div class="question">15. Longest Subarray with Sum K</div><div class="pattern">Prefix Sum / Hashing</div><a class="link" href="#">View Code</a><div class="difficulty"><div class="difficulty-bar"><div class="difficulty-fill hard"></div></div><div class="level">Hard</div></div></div>
+
+    <div class="card"><div class="question">16. Two Sum</div><div class="pattern">Hash Map</div><a class="link" href="#">View Code</a><div class="difficulty"><div class="difficulty-bar"><div class="difficulty-fill medium"></div></div><div class="level">Medium</div></div></div>
+
+    <div class="card"><div class="question">17. Sort 0s, 1s, and 2s</div><div class="pattern">Dutch National Flag</div><a class="link" href="#">View Code</a><div class="difficulty"><div class="difficulty-bar"><div class="difficulty-fill medium"></div></div><div class="level">Medium</div></div></div>
+
+    <div class="card"><div class="question">18. Intersection of Unsorted Arrays</div><div class="pattern">Hashing</div><a class="link" href="#">View Code</a><div class="difficulty"><div class="difficulty-bar"><div class="difficulty-fill medium"></div></div><div class="level">Medium</div></div></div>
+
+    <div class="card"><div class="question">19. Majority Elements</div><div class="pattern">Boyer Moore Voting</div><a class="link" href="#">View Code</a><div class="difficulty"><div class="difficulty-bar"><div class="difficulty-fill hard"></div></div><div class="level">Hard</div></div></div>
+
+    <div class="card"><div class="question">20. Maximum Subarray Sum</div><div class="pattern">Kadane’s Algorithm</div><a class="link" href="#">View Code</a><div class="difficulty"><div class="difficulty-bar"><div class="difficulty-fill medium"></div></div><div class="level">Medium</div></div></div>
+
+    <div class="card"><div class="question">21. Best Time to Buy and Sell Stocks</div><div class="pattern">Greedy</div><a class="link" href="#">View Code</a><div class="difficulty"><div class="difficulty-bar"><div class="difficulty-fill medium"></div></div><div class="level">Medium</div></div></div>
+
+    <div class="card"><div class="question">22. Rearrange Array Elements by Sign</div><div class="pattern">Two Pointer</div><a class="link" href="#">View Code</a><div class="difficulty"><div class="difficulty-bar"><div class="difficulty-fill medium"></div></div><div class="level">Medium</div></div></div>
+
+    <div class="card"><div class="question">23. Next Permutation</div><div class="pattern">Permutation Logic</div><a class="link" href="#">View Code</a><div class="difficulty"><div class="difficulty-bar"><div class="difficulty-fill hard"></div></div><div class="level">Hard</div></div></div>
+
+    <div class="card"><div class="question">24. Leaders in an Array</div><div class="pattern">Reverse Traversal</div><a class="link" href="#">View Code</a><div class="difficulty"><div class="difficulty-bar"><div class="difficulty-fill easy"></div></div><div class="level">Easy</div></div></div>
+
+    <div class="card"><div class="question">25. Longest Consecutive Sequence</div><div class="pattern">Hash Set</div><a class="link" href="#">View Code</a><div class="difficulty"><div class="difficulty-bar"><div class="difficulty-fill hard"></div></div><div class="level">Hard</div></div></div>
+
+  </div>
+</body>
+</html>
